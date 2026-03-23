@@ -36,6 +36,10 @@ export class NameGenerator {
     this.objects = objects;
   }
 
+  static fromParsedData(predicates: WordEntry[], objects: WordEntry[]): NameGenerator {
+    return new NameGenerator(predicates, objects);
+  }
+
   static async create(dataDir?: string): Promise<NameGenerator> {
     const dir = dataDir ?? join(import.meta.dirname, "..");
     const [predText, objText] = await Promise.all([

@@ -1,0 +1,16 @@
+name = "agent-name-api"
+main = "src/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[unsafe.bindings]]
+name = "GENERATE_LIMITER"
+type = "ratelimit"
+namespace_id = "0"
+simple = { limit = 60, period = 60 }
+
+[[unsafe.bindings]]
+name = "SUGGEST_LIMITER"
+type = "ratelimit"
+namespace_id = "1"
+simple = { limit = 10, period = 60 }

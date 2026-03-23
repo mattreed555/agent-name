@@ -1,0 +1,19 @@
+{
+  "name": "agent-name-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build-data": "tsx build-data.ts",
+    "dev": "npm run build-data && wrangler dev",
+    "deploy": "npm run build-data && wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241127.0",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.99.0"
+  }
+}

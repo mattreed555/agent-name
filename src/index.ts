@@ -1,5 +1,12 @@
-export type { WordEntry, GeneratedName } from "./types.js";
+export type {
+  WordEntry,
+  GeneratedName,
+  SuggesterOptions,
+  Suggestion,
+  SuggesterResult,
+} from "./types.js";
 export { NameGenerator } from "./generator.js";
+export { NameSuggester } from "./suggester.js";
 
 // CLI demo when run directly
 const isMain = import.meta.filename === process.argv[1];
