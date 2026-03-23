@@ -1,0 +1,14 @@
+{
+  "name": "agent-name",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "generate-nicknames": "python3 scripts/generate-nicknames.py"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.7.0"
+  }
+}
